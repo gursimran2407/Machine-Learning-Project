@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="345a65fc-37f1-4ca9-9d8f-9a58a2745850" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Classification/Gursimran Singh/ML_Proj.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Classification/Gursimran Singh/ML_Proj.ipynb" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1T4TQyuSsb9aaqmZE7EAZF1eEnc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Classification/Girish" />
+      <recent name="$PROJECT_DIR$/Classification/Darshan" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="345a65fc-37f1-4ca9-9d8f-9a58a2745850" name="Default Changelist" comment="" />
+      <created>1572718355328</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572718355328</updated>
+      <workItem from="1572718359116" duration="561000" />
+      <workItem from="1572812113375" duration="2686000" />
+      <workItem from="1573008644649" duration="1793000" />
+    </task>
+    <task id="LOCAL-00001" summary="Organized Folders.">
+      <created>1572821078987</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572821078987</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Girish File Added">
+      <created>1573008765733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573008765733</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Worked on ThoraticSurgery Data. Imported tha data and saved into a DF.">
+      <created>1573009693234</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573009693234</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Worked on ThoraticSurgery Data. Used sci-kit learn to use the following classifiers:&#10;k-nearest neighbours classification &#10;Support vector classification &#10;Decision tree classification &#10;Random forest classification &#10;AdaBoost classification&#10;Logistic regression (for classification) &#10;Gaussian naive Bayes classification">
+      <created>1573013213471</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573013213471</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Worked on ThoraticSurgery Data. Used sci-kit learn to use the following classifiers:&#10;k-nearest neighbours classification &#10;Support vector classification &#10;Decision tree classification &#10;Random forest classification &#10;AdaBoost classification&#10;Logistic regression (for classification) &#10;Gaussian naive Bayes classification">
+      <created>1573013449093</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573013449093</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Organized Folders." />
+    <MESSAGE value="Girish File Added" />
+    <MESSAGE value="Worked on ThoraticSurgery Data. Imported tha data and saved into a DF." />
+    <MESSAGE value="Worked on ThoraticSurgery Data. Used sci-kit learn to use the following classifiers:&#10;k-nearest neighbours classification &#10;Support vector classification &#10;Decision tree classification &#10;Random forest classification &#10;AdaBoost classification&#10;Logistic regression (for classification) &#10;Gaussian naive Bayes classification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on ThoraticSurgery Data. Used sci-kit learn to use the following classifiers:&#10;k-nearest neighbours classification &#10;Support vector classification &#10;Decision tree classification &#10;Random forest classification &#10;AdaBoost classification&#10;Logistic regression (for classification) &#10;Gaussian naive Bayes classification" />
+  </component>
+</project>
