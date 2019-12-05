@@ -268,6 +268,61 @@ class RegressionModels():
     y = data['cnt']
     self.train_all__models(X, y)
 
+  def merck_molecular_challenge(self):
+    MERCK_FILE= '../Datasets/MerckActivity/TrainingSet/ACT2_competition_training.csv'
+    with open(MERCK_FILE) as f:
+        cols = f.readline().rstrip('\n').split(',') # Read the header line and get list of column names
+        # Load the actual data, ignoring first column and using second column as targets.
+        X = np.loadtxt(MERCK_FILE, delimiter=',', usecols=range(2, len(cols)), skiprows=1, dtype=np.uint8) 
+        y = np.loadtxt(MERCK_FILE, delimiter=',', usecols=[1], skiprows=1)
+
+    MERCK_FILE2= '../Datasets/MerckActivity/TrainingSet/ACT4_competition_training.csv'
+    with open(MERCK_FILE2) as f:
+        cols = f.readline().rstrip('\n').split(',') # Read the header line and get list of column names
+        # Load the actual data, ignoring first column and using second column as targets.
+        X_ACT4 = np.loadtxt(MERCK_FILE2, delimiter=',', usecols=range(2, len(cols)), skiprows=1, dtype=np.uint8) 
+        y_ACT4 = np.loadtxt(MERCK_FILE2, delimiter=',', usecols=[1], skiprows=1)
+
+    #saving into files ACT2
+    from tempfile import TemporaryFile
+    outfileACT2 = TemporaryFile()
+    np.savez(outfileACT2, x_ACT2 = X, y_ACT2 = y)
+    _ = outfileACT2.seek(0) 
+
+    #saving into files ACT4
+    outfileACT4 = TemporaryFile()
+    np.savez(outfileACT4, x_ACT4 = X_ACT4, y_ACT4 = y_ACT4)
+    _ = outfileACT4.seek(0) 
+
+    # loading file ACT2
+    npzfile_ACT2 = np.load(outfileACT2, allow_pickle=True)
+    print(npzfile_ACT2.files)
+
+    # loading file ACT2
+    npzfile_ACT4 = np.load(outfileACT4, allow_pickle=True)
+    print(npzfile_ACT4.files)
+
+    # Dataframe
+    X_ACT2 = pd.DataFrame(npzfile_ACT2['x_ACT2'])
+    y_ACT2 = pd.DataFrame(npzfile_ACT2['y_ACT2'])
+
+    X_ACT4 = pd.DataFrame(npzfile_ACT4['x_ACT4'])
+    y_ACT4 = pd.DataFrame(npzfile_ACT4['y_ACT4'])
+
+    self.train_all__models(X_ACT2, y_ACT2)
+    self.train_all__models(X_ACT4, y_ACT4)
+
+
+  def SGEMM_GPU_kernel_performance(self):
+    long_list = pd.read_csv("sgemm_product.csv",delimiter=',',nrows=0)
+    long_list = ['MWG',	'NWG',	'KWG',	'MDIMC',	'NDIMC',	'MDIMA',	'NDIMB',	'KWI',	'VWM',	'VWN',	'STRM',	'STRN',	'SA',	'SB',	'Run1 (ms)',	'Run2 (ms)',	'Run3 (ms)',	'Run4 (ms)']
+    data = pd.read_csv("sgemm_product.csv",delimiter = ',',skiprows=1,names=long_list)
+    
+    X = pd.DataFrame(data,columns=['MWG','NWG','KWG','MDIMC','NDIMC','MDIMA','NDIMB','KWI','VWM','VWN','STRM','STRN','SA','SB'])
+    y = pd.DataFrame(data,columns=['Run1 (ms)','Run2 (ms)','Run3 (ms)','Run4 (ms)'])
+
+    self.train_all__models(X, y)
+
 regressionModels = RegressionModels()
 regressionModels.wine_quality()
 #regressionModels.speech_data()
@@ -276,4 +331,6 @@ regressionModels.student_data_train_G3()
 regressionModels.facebook()
 regressionModels.qsar_aquatic_toxicity()
 regressionModels.bikesharing()
+regressionModels.merck_molecular_challenge()
+regressionModels.SGEMM_GPU_kernel_performance()
 
